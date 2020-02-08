@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coders</title>
+    <link href="https://fonts.googleapis.com/css?family=Oxygen+Mono&display=swap&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <h1>Coders</h1>
+        <h2 class="goodAns">Correct Answers: <span id="goodAnswers">0</span></h2>
+        <h2 class="tip"></h2>
+
+        <div id="gameBoard">
+            <div id="help">
+                <button class="btnHelp" id='callToAFriend'>
+                    <div></div>Phone to a friend
+                </button class="btnHelp">
+                <button class="btnHelp" id='halfOnHalf'>
+                    <div></div>50:50
+                </button>
+                <button class="btnHelp" id='questionToCrowd'>
+                    <div></div>Question to the audience
+                </button>
+            </div>
+
+            <div id="question"></div>
+            <div id="price"></div>
+            <div id="allBtns">
+                <button class='btnAns' id="answer1" data-answers='0'></button>
+                <button class='btnAns' id="answer2" data-answers='1'></button>
+                <button class='btnAns' id="answer3" data-answers='2'></button>
+                <button class='btnAns' id="answer4" data-answers='3'></button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

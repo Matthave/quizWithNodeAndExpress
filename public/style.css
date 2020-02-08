@@ -1,0 +1,190 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oxygen Mono', monospace;
+  color:white;
+}
+
+body{
+  background-color: black;
+  min-height: 100vh;
+}
+  div.wrap{
+    width: 80%;
+    min-height: 100vh;
+    text-align: center;
+    margin: 0 auto;
+    border: 2px #3c1361 solid;
+    background: linear-gradient(90deg, rgba(49,9,87,1) 0%, rgba(40,4,73,1) 35%, rgba(14,0,27,1) 100%);
+  }
+
+  h1{
+    letter-spacing: 5px;
+  }
+
+  h2{
+    font-size: 16px;
+    margin: 25px 0px;
+  }
+  
+  span{
+    color: green;
+  }
+
+  div#help{
+    display: flex;
+    flex-direction: column;
+  }
+
+  div#help button{
+    position: relative;
+    width: 150px;
+    height: 60px;
+    margin: 10px auto;
+    padding:10px;
+    border-radius:50%;
+    border:1px white solid;
+    background: linear-gradient(90deg, rgba(30,38,124,1) 0%, rgba(10,18,98,1) 35%, rgba(2,7,60,1) 100%);
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  
+  button div{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.2);
+    transition: 0.2s;
+  }
+
+  button div:hover{
+    background-color: rgba(0,0,0,0);
+  }
+
+  .btnHelp:hover{
+    box-shadow: 0px 0px 1px 1px white; 
+  }
+
+  div#question, div#price{
+    background-color: black;
+    padding: 10px;
+    border-radius: 15%;
+    border:1px white solid;
+    margin: 10px 10px 20px 10px;
+}
+  
+#allBtns{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 25vh;
+}
+
+button.btnAns{
+  width: 100%;
+  min-height: 35px;
+  color: black;
+  padding:5px 0px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-color: rgb(251,163,26);
+  border: 1px black solid;
+  box-shadow: 0px 0px 0px 1px white;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button.btnAns:hover{
+  background-color: rgb(77, 255, 0);
+  box-shadow: 0px 0px 2px 2px white;
+}
+
+@media(min-width:640px){
+  div#help{
+    flex-direction: row;
+  }
+}
+
+@media(min-width:1024px){
+    div.wrap{
+      width: 70%;
+    }
+  
+    h1{
+      letter-spacing: 8px;
+      font-size: 40px;
+    }
+  
+    h2{
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+  
+    div#help button{
+      width: 175px;
+      height: 75px;
+      margin: 20px auto;
+     font-size: 16px;
+    }
+  
+    div#question{
+      padding: 15px;
+      border-radius: 25%;
+      margin: 15px 10px 25px 10px;
+      font-size: 18px;
+  }
+    
+  #allBtns{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25vh;
+  }
+  
+  button.btnAns{
+    letter-spacing: 1px;
+    font-size: 16px;
+  }
+}
+
+@media(min-width:1300px){
+  div.wrap{
+    width: 70%;
+  }
+
+  h1{
+    letter-spacing: 10px;
+    font-size: 45px;
+  }
+
+  h2{
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  div#help button{
+    width: 200px;
+    height: 100px;
+    margin: 25px auto;
+   font-size: 18px;
+  }
+
+  div#question{
+    padding: 20px;
+    margin: 20px 10px 30px 10px;
+    font-size: 20px;
+}
+
+button.btnAns{
+  min-height: 45px;
+  margin:12px 0px;
+  letter-spacing: 1px;
+  font-size: 18px;
+ }
+}
+
